@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CursoCompradoService.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ead-gamificada</a> &gt; <a href="index.source.html" class="el_package">com.ead_gamificada.service</a> &gt; <span class="el_source">CursoCompradoService.java</span></div><h1>CursoCompradoService.java</h1><pre class="source lang-java linenums">package com.ead_gamificada.service;
+
+import com.ead_gamificada.entity.CursoComprado;
+import com.ead_gamificada.repository.CursoCompradoRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Service
+<span class="nc" id="L11">public class CursoCompradoService {</span>
+
+    @Autowired
+    private CursoCompradoRepository cursoCompradoRepository;
+
+    public List&lt;CursoComprado&gt; listarTodoCursoComprado() {
+<span class="nc" id="L17">        return cursoCompradoRepository.findAll();</span>
+    }
+
+    public CursoComprado buscarCursoCompradoPorId(Long id) {
+<span class="nc" id="L21">        return cursoCompradoRepository.findById(id).orElse(null);</span>
+    }
+
+    public CursoComprado salvarCursoComprado(CursoComprado cursoComprado) {
+<span class="nc" id="L25">        return cursoCompradoRepository.save(cursoComprado);</span>
+    }
+
+    public void deletarCursoComprado(Long id) {
+<span class="nc" id="L29">        cursoCompradoRepository.deleteById(id);</span>
+<span class="nc" id="L30">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

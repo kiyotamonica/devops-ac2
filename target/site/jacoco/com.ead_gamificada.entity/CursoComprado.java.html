@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CursoComprado.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ead-gamificada</a> &gt; <a href="index.source.html" class="el_package">com.ead_gamificada.entity</a> &gt; <span class="el_source">CursoComprado.java</span></div><h1>CursoComprado.java</h1><pre class="source lang-java linenums">package com.ead_gamificada.entity;
+
+import jakarta.persistence.Embedded;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = &quot;tb_cursoComprado&quot;)
+<span class="fc" id="L14">public class CursoComprado {</span>
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @ManyToOne
+    @JoinColumn(name = &quot;aluno_id&quot;)
+    private Aluno aluno;
+
+    @Embedded
+    private Pagamento pagamento;
+
+    @ManyToOne
+    @JoinColumn(name = &quot;curso_id&quot;)
+    private Curso curso;
+
+    // Getters e Setters
+    public Long getId() {
+<span class="nc" id="L33">        return id;</span>
+    }
+
+    public void setId(Long id) {
+<span class="nc" id="L37">        this.id = id;</span>
+<span class="nc" id="L38">    }</span>
+
+    public Aluno getAluno() {
+<span class="nc" id="L41">        return aluno;</span>
+    }
+
+    public void setAluno(Aluno aluno) {
+<span class="nc" id="L45">        this.aluno = aluno;</span>
+<span class="nc" id="L46">    }</span>
+
+    public Pagamento getPagamento() {
+<span class="fc" id="L49">        return pagamento;</span>
+    }
+
+    public void setPagamento(Pagamento pagamento) {
+<span class="fc" id="L53">        this.pagamento = pagamento;</span>
+<span class="fc" id="L54">    }</span>
+
+    public Curso getCurso() {
+<span class="nc" id="L57">        return curso;</span>
+    }
+
+    public void setCurso(Curso curso) {
+<span class="nc" id="L61">        this.curso = curso;</span>
+<span class="nc" id="L62">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>
