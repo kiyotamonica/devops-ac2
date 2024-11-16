@@ -1,11 +1,4 @@
-unidade_teste/Pagamento.class
 com/example/ead_gamificada/entity/test/CursoTest.class
-unidade_teste/Aluno.class
 com/example/ead_gamificada/entity/test/AlunoTest.class
-com/example/ead_gamificada/entity/test/CursoCompradoTest.class
-unidade_teste/Acesso.class
-entity_test/CursoTest.class
-entity_test/CursoCompradoTest.class
-entity_test/AlunoTest.class
 com/example/ead_gamificada/EadGamificadaApplicationTests.class
-unidade_teste/PagamentoTest.class
+com/example/ead_gamificada/entity/test/CursoCompradoTest.class
