@@ -7,25 +7,25 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-<span class="nc" id="L10">public class AlunoService {</span>
+<span class="fc" id="L10">public class AlunoService {</span>
 
     @Autowired
     private AlunoRepository alunoRepository;
 
     public List&lt;Aluno&gt; listarTodosAlunos() {
-<span class="nc" id="L16">        return alunoRepository.findAll();</span>
+<span class="fc" id="L16">        return alunoRepository.findAll();</span>
     }
 
     public Aluno buscarAlunoPorId(Long id) {
-<span class="nc" id="L20">        return alunoRepository.findById(id).orElse(null);</span>
+<span class="fc" id="L20">        return alunoRepository.findById(id).orElse(null);</span>
     }
 
     public Aluno salvarAluno(Aluno aluno) {
-<span class="nc" id="L24">        return alunoRepository.save(aluno);</span>
+<span class="fc" id="L24">        return alunoRepository.save(aluno);</span>
     }
 
     public void deletarAluno(Long id) {
-<span class="nc" id="L28">        alunoRepository.deleteById(id);</span>
-<span class="nc" id="L29">    }</span>
+<span class="fc" id="L28">        alunoRepository.deleteById(id);</span>
+<span class="fc" id="L29">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

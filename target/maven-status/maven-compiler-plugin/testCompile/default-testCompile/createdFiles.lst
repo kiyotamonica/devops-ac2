@@ -1,4 +1,7 @@
 com/example/ead_gamificada/entity/test/CursoTest.class
 com/example/ead_gamificada/entity/test/AlunoTest.class
-com/example/ead_gamificada/EadGamificadaApplicationTests.class
+com/example/ead_gamificada/service/CursoServiceTest.class
 com/example/ead_gamificada/entity/test/CursoCompradoTest.class
+com/example/ead_gamificada/service/CursoCompradoTest.class
+com/example/ead_gamificada/service/AlunoServiceTest.class
+com/example/ead_gamificada/EadGamificadaApplicationTests.class

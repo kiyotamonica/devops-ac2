@@ -1,4 +1,7 @@
 /home/monicakiyota/Área de trabalho/devops-ac2/devops-ac2/src/test/java/com/example/ead_gamificada/EadGamificadaApplicationTests.java
+/home/monicakiyota/Área de trabalho/devops-ac2/devops-ac2/src/test/java/com/example/ead_gamificada/controller/test/AlunoControllerTest.java
+/home/monicakiyota/Área de trabalho/devops-ac2/devops-ac2/src/test/java/com/example/ead_gamificada/controller/test/CursoCompradoControllerTest.java
+/home/monicakiyota/Área de trabalho/devops-ac2/devops-ac2/src/test/java/com/example/ead_gamificada/controller/test/CursoControllerTest.java
 /home/monicakiyota/Área de trabalho/devops-ac2/devops-ac2/src/test/java/com/example/ead_gamificada/entity/test/AlunoTest.java
 /home/monicakiyota/Área de trabalho/devops-ac2/devops-ac2/src/test/java/com/example/ead_gamificada/entity/test/CursoCompradoTest.java
 /home/monicakiyota/Área de trabalho/devops-ac2/devops-ac2/src/test/java/com/example/ead_gamificada/entity/test/CursoTest.java
@@ -8,3 +11,6 @@
 /home/monicakiyota/Área de trabalho/devops-ac2/devops-ac2/src/test/java/com/example/ead_gamificada/repository/test/Save_And_Find_AlunoTest.java
 /home/monicakiyota/Área de trabalho/devops-ac2/devops-ac2/src/test/java/com/example/ead_gamificada/repository/test/Save_And_Find_CursoCompradoTest.java
 /home/monicakiyota/Área de trabalho/devops-ac2/devops-ac2/src/test/java/com/example/ead_gamificada/repository/test/Save_And_Find_CursoTest.java
+/home/monicakiyota/Área de trabalho/devops-ac2/devops-ac2/src/test/java/com/example/ead_gamificada/service/AlunoServiceTest.java
+/home/monicakiyota/Área de trabalho/devops-ac2/devops-ac2/src/test/java/com/example/ead_gamificada/service/CursoCompradoTest.java
+/home/monicakiyota/Área de trabalho/devops-ac2/devops-ac2/src/test/java/com/example/ead_gamificada/service/CursoServiceTest.java

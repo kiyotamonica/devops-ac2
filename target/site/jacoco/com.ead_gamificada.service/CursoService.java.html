@@ -8,17 +8,17 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-<span class="nc" id="L11">public class CursoService {</span>
+<span class="fc" id="L11">public class CursoService {</span>
 
     @Autowired
     private CursoRepository cursoRepository;
 
     public List&lt;Curso&gt; listarTodosCursos() {
-<span class="nc" id="L17">        return cursoRepository.findAll();</span>
+<span class="fc" id="L17">        return cursoRepository.findAll();</span>
     }
 
     public Curso buscarCursoPorId(Long id) {
-<span class="nc" id="L21">        return cursoRepository.findById(id).orElse(null);</span>
+<span class="fc" id="L21">        return cursoRepository.findById(id).orElse(null);</span>
     }
 
     public Curso salvarCurso(Curso curso) {
@@ -26,7 +26,7 @@ import java.util.List;
     }
 
     public void deletarCurso(Long id) {
-<span class="nc" id="L29">        cursoRepository.deleteById(id);</span>
-<span class="nc" id="L30">    }</span>
+<span class="fc" id="L29">        cursoRepository.deleteById(id);</span>
+<span class="fc" id="L30">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>
